@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Beispielsimulation": {
+      "commandName": "Project",
+      "commandLineArgs": "configA.json"
+    }
+  }
+}

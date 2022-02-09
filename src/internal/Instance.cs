@@ -14,7 +14,7 @@ namespace Femyou
       handle = library.fmi2Instantiate(
         name,
         instanceType,
-        model.GUID,
+        model.GUID.ToString(),
         model.TmpFolder,
         callbacks.Structure,
         FMI2.fmi2Boolean.fmi2False,
@@ -64,7 +64,7 @@ namespace Femyou
 
     private T[] Read<T>(IEnumerable<IVariable> variables, T[] values, Func<IntPtr, UInt32[], ulong, T[], int> call)
     {
-      var valueReferences = variables.Cast<Variable>().Select(variables => variables.ValueReference).ToArray();
+      var valueReferences = variables.Select(variables => variables.ValueReference).ToArray();
       var status = call(handle, valueReferences, (ulong)valueReferences.Length, values);
       if (status != 0)
         throw new Exception("Failed to read");
@@ -88,10 +88,10 @@ namespace Femyou
       (a, b, c, d) => library.fmi2SetString(a, b, c, d)
     );
 
-    private void Write<T>(IEnumerable<(IVariable, T)> variables, Func<IntPtr, UInt32[], ulong, T[], int> call)
+    private void Write<T>(IEnumerable<(IVariable, T)> variableTuples, Func<IntPtr, UInt32[], ulong, T[], int> call)
     {
-      var valueReferences = variables.Select(variables => variables.Item1).Cast<Variable>().Select(variables => variables.ValueReference).ToArray();
-      var values = variables.Select(variables => variables.Item2).ToArray();
+      var valueReferences = variableTuples.Select(variableTuples => variableTuples.Item1).Select(variables => variables.ValueReference).ToArray();
+      var values = variableTuples.Select(variableTuples => variableTuples.Item2).ToArray();
       var status = call(handle, valueReferences, (ulong)valueReferences.Length, values);
       if (status != 0)
         throw new Exception("Failed to write");

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="rcl_interfaces_assembly">
+      <HintPath>C:\dev\ros2cs\install\lib\dotnet\rcl_interfaces_assembly.dll</HintPath>
+    </Reference>
+    <Reference Include="ros2cs_common">
+      <HintPath>C:\dev\ros2cs\install\lib\dotnet\ros2cs_common.dll</HintPath>
+    </Reference>
+    <Reference Include="ros2cs_core">
+      <HintPath>C:\dev\ros2cs\install\lib\dotnet\ros2cs_core.dll</HintPath>
+    </Reference>
+    <Reference Include="std_msgs_assembly">
+      <HintPath>C:\dev\ros2cs\install\lib\dotnet\std_msgs_assembly.dll</HintPath>
+    </Reference>
+    <Reference Include="unique_identifier_msgs_assembly">
+      <HintPath>C:\dev\ros2cs\install\lib\dotnet\unique_identifier_msgs_assembly.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo &quot;Fertig&quot;" />
+  </Target>
+
+</Project>

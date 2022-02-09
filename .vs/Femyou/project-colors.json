@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ba3b7b60-8f19-4a4e-9e74-44a5823772cc": {
+      "ProjectGuid": "ba3b7b60-8f19-4a4e-9e74-44a5823772cc",
+      "DisplayName": "CoSimMiddleware",
+      "ColorIndex": 0
+    },
+    "c7db0fbf-1f37-4b88-9525-bd2e8f4d1199": {
+      "ProjectGuid": "c7db0fbf-1f37-4b88-9525-bd2e8f4d1199",
+      "DisplayName": "ROS2Test",
+      "ColorIndex": 1
+    },
+    "2f693186-1d02-4da7-beac-ae201ea7852c": {
+      "ProjectGuid": "2f693186-1d02-4da7-beac-ae201ea7852c",
+      "DisplayName": "Femyou",
+      "ColorIndex": 2
+    },
+    "d27c5a34-662f-4c52-875c-a71bad31a9f4": {
+      "ProjectGuid": "d27c5a34-662f-4c52-875c-a71bad31a9f4",
+      "DisplayName": "TalkerExample",
+      "ColorIndex": 3
+    },
+    "889e56d7-38ce-4529-9561-c9d354ffa877": {
+      "ProjectGuid": "889e56d7-38ce-4529-9561-c9d354ffa877",
+      "DisplayName": "BouncingBallGif",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Sonstige Dateien",
+      "ColorIndex": -1
+    },
+    "a8f16785-b5ac-4cdc-9e97-8ed028d1e1c4": {
+      "ProjectGuid": "a8f16785-b5ac-4cdc-9e97-8ed028d1e1c4",
+      "DisplayName": "ZMQ_E",
+      "ColorIndex": 5
+    },
+    "2be40df5-319b-4b17-895e-fedd838912b5": {
+      "ProjectGuid": "2be40df5-319b-4b17-895e-fedd838912b5",
+      "DisplayName": "CoSimInterfaces",
+      "ColorIndex": 6
+    },
+    "af178d12-42a2-446c-9e13-b248a72e017d": {
+      "ProjectGuid": "af178d12-42a2-446c-9e13-b248a72e017d",
+      "DisplayName": "UDP_Com",
+      "ColorIndex": 7
+    },
+    "137339be-c757-4bf6-bb95-4706f2602c2b": {
+      "ProjectGuid": "137339be-c757-4bf6-bb95-4706f2602c2b",
+      "DisplayName": "CoSimManager",
+      "ColorIndex": 8
+    },
+    "917ec613-d95e-4156-bf74-d82f033bdee2": {
+      "ProjectGuid": "917ec613-d95e-4156-bf74-d82f033bdee2",
+      "DisplayName": "Performancetest",
+      "ColorIndex": 9
+    },
+    "22cceef8-ae9d-4c88-8109-0f6f459777f3": {
+      "ProjectGuid": "22cceef8-ae9d-4c88-8109-0f6f459777f3",
+      "DisplayName": "Beispielsimulation",
+      "ColorIndex": 10
+    }
+  },
+  "NextColorIndex": 11
+}

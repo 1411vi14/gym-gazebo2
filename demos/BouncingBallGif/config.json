@@ -1,0 +1,67 @@
+{
+	"$schema": "FMULoaderConfig.json",
+	"Modelle": [
+		{
+			"fmufile": "BouncingBall.fmu",
+			"instances": [
+				{
+					"name": "BouncingBall1",
+					"varmapping": [
+						{
+							"name": "time",
+							"causality": "independent",
+							"varID": 1,
+							"start": 0.0
+						},
+						{
+							"name": "h",
+							"causality": "output",
+							"varID": 2,
+							"missingValue": "extrapolate",
+							"start": 5,
+							"varInID": 4
+						},
+						{
+							"name": "v",
+							"causality": "output",
+							"varID": 5,
+							"missingValue": "constant",
+							"varInID": 6
+
+						}
+					]
+				},
+				{
+					"name": "BouncingBall2",
+					"varmapping": [
+						{
+							"name": "time",
+							"causality": "independent",
+							"varID": 3,
+							"start": 0.0
+						},
+						{
+							"name": "h",
+							"causality": "output",
+							"varID": 4,
+							"missingValue": "extrapolate", //"linear"
+							"start": 10,
+							"varInID": 2
+						},
+						{
+							"name": "v",
+							"causality": "output",
+							"varID": 6,
+							"missingValue": "constant",
+							"varInID": 5
+
+						}
+					]
+				}
+
+			],
+			"stepsize": 0.1
+
+		}
+	]
+}

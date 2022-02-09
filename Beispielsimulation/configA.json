@@ -1,0 +1,23 @@
+{
+  "Modellname": "A",
+  "Port": 5558,
+  "Variables": [
+    [
+      {
+        "Name": "a",
+        "Value": 12,
+        "SourceIPEndPoint": "127.0.0.1:5559",
+        "SourceTopic": 8,
+        "DestinationTopic": 16
+      },
+      {
+        "Name": "b",
+        "Value": 0,
+        "SourceIPEndPoint": "127.0.0.1:5559",
+        "SourceTopic": 2,
+        "DestinationTopic": 4
+      }
+    ]
+
+  ]
+}
